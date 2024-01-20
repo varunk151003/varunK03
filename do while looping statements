@@ -27,3 +27,17 @@ int main()
     
     return 0;
 }
+
+//False condition program
+#include<stdbool.h>
+#include<stdio.h>
+
+int main()
+{
+    bool condition=false;
+    do{
+        printf("This is loop body");
+    }while(condition);
+    
+    return 0;
+}
