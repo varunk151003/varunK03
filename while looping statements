@@ -24,3 +24,20 @@ int main()
     }
     return 0;
 }
+
+//infinite loop program 2
+#include<stdio.h>
+
+int main()
+{
+    int gfg1=1;
+    int gfg2=1;
+    
+    while(gfg1<10)
+    {
+        gfg2=gfg2+1;
+        printf("GeeksforGeeks to infinity\n");
+    }
+    
+    return 0;
+}
