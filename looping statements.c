@@ -41,8 +41,4 @@ int main()
     }
     return 0;
 }
-        printf("Hi,Good to see you! ");
-    printf("\nThis statement executes after for loop");
-   
-    return 0;
-}
+       
