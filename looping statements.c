@@ -14,3 +14,17 @@ int main()
    
     return 0;
 }
+
+//looping ststements without curly braces
+#include<stdio.h>
+
+int main()
+{
+    int i;
+    
+    for(i=1;i<=10;i++)
+        printf("Hi,Good to see you! ");
+    printf("\nThis statement executes after for loop");
+   
+    return 0;
+}
