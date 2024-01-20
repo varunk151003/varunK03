@@ -23,6 +23,11 @@ int main()
     int i;
     
     for(i=1;i<=10;i++)
+        printf("%d",i);
+    printf("\nThis statement executes after for loop");
+
+    return 0;
+}
 
 //Infinite loop
 #include<stdio.h>
