@@ -23,6 +23,19 @@ int main()
     int i;
     
     for(i=1;i<=10;i++)
+
+//Infinite loop
+#include<stdio.h>
+
+int main()
+{
+    int i;
+    
+    for( ; ; ){
+        printf("The loop will run forever.\n");
+    }
+    return 0;
+}
         printf("Hi,Good to see you! ");
     printf("\nThis statement executes after for loop");
    
