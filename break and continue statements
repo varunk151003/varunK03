@@ -78,3 +78,28 @@ int main()
     }
     return 0;
 }
+
+//break statement in for loop and while loop
+#include<stdio.h>
+int main()
+{
+    printf("break in for loop :\n");
+    for(int val=1;val<=5;val++)
+    {
+        if (val==3)
+        break;
+        else
+        printf("%d\n",val);
+    }
+    printf("break in while loop:\n");
+    int val=1;
+    while(val<20)
+    {
+        if (val==3)
+        continue;
+        else
+        printf("%d\n",val);
+        val++;
+    }
+    return 0;
+}
