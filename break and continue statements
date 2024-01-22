@@ -54,3 +54,27 @@ int main()
    
     return 0;
 }
+
+
+//break and continue combined program
+#include<stdio.h>
+int main()
+{
+    printf("The loop with break produces output as :\n");
+    for(int i=1;i<=7;i++)
+    {
+        if (i==3)
+        break;
+        else
+        printf("%d\n",i);
+    }
+    printf("The loop with continue produces output as:\n");
+    for(int i=1;i<=7;i++)
+    {
+        if (i==3)
+        continue;
+        else
+        printf("%d\n",i);
+    }
+    return 0;
+}
