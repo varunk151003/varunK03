@@ -11,3 +11,17 @@ int main()
 
     return 0;
 }
+
+//ternary operator using while
+#include<stdio.h>
+int main()
+{
+    int val=1;
+    while(val<=10)
+    {
+        (val%2==0) ? printf("") : printf("%d ",val);
+        
+        val++;
+    }
+    return 0;
+}
