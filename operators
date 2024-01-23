@@ -16,3 +16,21 @@ int main()
     
     return 0;
 }
+
+//relational operators
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the number 1 and number 2 :\n");
+    scanf("%d %d",&a,&b);
+    printf("a < b = %d\n",a<b);
+    printf("a > b = %d\n",a>b);
+    printf("a <= b = %d\n",a<=b);
+    printf("a >= b = %d\n",a/b);
+    printf("a == b = %d\n",a==b);
+    printf("a != b = %d\n",a!=b);
+    
+    
+    return 0;
+}
