@@ -24,3 +24,30 @@ int main()
     }
     return 0;
 }
+
+//2 Dimensional array with characters
+
+#include<stdio.h>
+int main()
+{
+    int arr[2][3];
+    printf("2D array:\n");
+    
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("\nEnter the number or character :");
+            scanf("%s",&arr[i][j]);
+        }
+        
+        printf("\n");
+    }
+    
+    printf("The 2D array is:\n");
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("%c ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
