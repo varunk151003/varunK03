@@ -1,0 +1,35 @@
+//arithmetic operations using functions
+
+#include<stdio.h>
+int addition(int a,int b){
+    int sum = a+b;
+    return(sum);
+}
+int sub(int a,int b){
+    int difference = a-b;
+    return(difference);
+}
+int multiplication(int a,int b){
+    int product = a*b;
+    return(product);
+}
+int division(int a,int b){
+    int quotient = a/b;
+    return(quotient);
+}
+int main()
+{
+    int x,y;
+    printf("Enter the first and second value :\n");
+    scanf("%d%d",&x,&y);
+    int result1 = addition(x,y);
+    int result2 = sub(x,y);
+    int result3 = multiplication(x,y);
+    int result4 = division(x,y);
+    printf("Addition of %d and %d is :%d\n",x,y,result1);
+    printf("subtraction of %d and %d is :%d\n",x,y,result2);
+    printf("Multiplication of %d and %d is :%d\n",x,y,result3);
+    printf("Division of %d and %d is :%d\n",x,y,result4);
+    
+    return 0;
+}
