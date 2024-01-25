@@ -36,7 +36,7 @@ int main()
 
 
 
-
+//condition to check if any values are zero and to change both values inside multiplication function
 
 int multiplication(int a,int b){
     int product = a*b;
@@ -46,4 +46,25 @@ int multiplication(int a,int b){
         printf("Please re-enter the value again :\n");
         scanf("%d %d",&g,&h);
         return(g*h);
+    }
+
+//condition to check whether the particular given value is zero and to change its value
+
+int multiplication(int a,int b){
+    if(a==0){
+        printf("WARNING : Multiplication doesnot performs with zero\n");
+        int g;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&g);
+        return(g*b);
+    }
+    else if(b==0){
+        printf("WARNING : Multiplication doesnot performs with zero\n");
+        int h;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&h);
+        return(a*h);
+    }
+    else{
+        return(a*b);
     }
