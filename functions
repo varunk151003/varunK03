@@ -1,4 +1,4 @@
-//arithmetic operations using functions
+//calculator program using functions
 
 #include<stdio.h>
 int addition(int a,int b){
@@ -10,27 +10,70 @@ int sub(int a,int b){
     return(difference);
 }
 int multiplication(int a,int b){
-    int product = a*b;
-    return(product);
+    if(a==0){
+        printf("WARNING : First value = 0, Multiplication doesnot performs with zero!!!\n");
+        int g;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&g);
+        return(g*b);
+    }
+    else if(b==0){
+        printf("WARNING : second value = 0, Multiplication doesnot performs with zero!!!\n");
+        int h;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&h);
+        return(a*h);
+    }
+    else{
+        return(a*b);
+    }
 }
 int division(int a,int b){
-    int quotient = a/b;
-    return(quotient);
+    if(a==0){
+        printf("WARNING : First value = 0, Division doesnot performs with zero!!!\n");
+        int g;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&g);
+        return(g/b);
+    }
+    else if(b==0){
+        printf("WARNING : second value = 0, Division doesnot performs with zero!!!\n");
+        int h;
+        printf("Please re-enter the value again :\n");
+        scanf("%d",&h);
+        return(a/h);
+    }
+    else{
+        return(a/b);
+    }
 }
 int main()
 {
-    int x,y;
-    printf("Enter the first and second value :\n");
+    int x,y,choice,result;
+    printf("___BASIC CALCULATOR PROGRAM___\n");
+    printf("\nEnter the first and second value :\n");
     scanf("%d%d",&x,&y);
-    int result1 = addition(x,y);
-    int result2 = sub(x,y);
-    int result3 = multiplication(x,y);
-    int result4 = division(x,y);
-    printf("Addition of %d and %d is :%d\n",x,y,result1);
-    printf("subtraction of %d and %d is :%d\n",x,y,result2);
-    printf("Multiplication of %d and %d is :%d\n",x,y,result3);
-    printf("Division of %d and %d is :%d\n",x,y,result4);
-    
+    printf("\n1.Addition \n2.Subtraction \n3.Multiplication \n4.Division\n\n\nEnter the application you need to perform :");
+    scanf("%d",&choice);
+    printf("\n\nYour choice is %d\n",choice);
+    switch(choice){
+        case 1:
+            result = addition(x,y);    
+            printf("Addition = %d\n",result);
+            break;
+        case 2:
+            result = sub(x,y);    
+            printf("subtraction = %d\n",result);
+            break;
+        case 3:
+            result = multiplication(x,y);    
+            printf("Multiplication = %d\n",result);
+            break;
+        case 4:
+            result = division(x,y);
+            printf("Division = %d\n",result);
+            break;
+    }
     return 0;
 }
 
