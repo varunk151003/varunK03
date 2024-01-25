@@ -68,3 +68,40 @@ int multiplication(int a,int b){
     else{
         return(a*b);
     }
+
+//Fibonacci series using functions
+
+#include<stdio.h>
+int fibonacci(int num){
+    if(num==0 || num==1){
+        return num;
+    }
+    else{
+        return fibonacci(num-1)+fibonacci(num-2);
+    }
+}
+int main()
+{
+    int a,val,add;
+    printf("how many numbers do you want to print? :\n");
+    scanf("%d",&a);
+    printf("The Fibonacci series of first %d numbers are : ",a);
+    for(int i=0;i<a;i++){
+        val=fibonacci(i);
+        printf("%d ",val);
+    }
+    add=sum(val);
+    printf("The sum of the fibonacci series are : %d",add);
+
+    return 0;
+}
+int sum(int num){
+    printf("\nnum value :: %d\n",num);
+    if(num==0){
+        return num;
+    }
+    else{
+        printf("Logic : %d+%d \n",num,num-1);
+        return num+sum(num-1);
+    }
+}
