@@ -52,14 +52,14 @@ int multiplication(int a,int b){
 
 int multiplication(int a,int b){
     if(a==0){
-        printf("WARNING : Multiplication doesnot performs with zero\n");
+        printf("WARNING :  First value = 0, Multiplication doesnot performs with zero\n");
         int g;
         printf("Please re-enter the value again :\n");
         scanf("%d",&g);
         return(g*b);
     }
     else if(b==0){
-        printf("WARNING : Multiplication doesnot performs with zero\n");
+        printf("WARNING : second value = 0, Multiplication doesnot performs with zero\n");
         int h;
         printf("Please re-enter the value again :\n");
         scanf("%d",&h);
