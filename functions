@@ -169,3 +169,30 @@ int odd_or_even(int val){
     }
     return val;
 }
+
+//perfect number using functions
+
+#include<stdio.h>
+int perfect(int n)
+{
+    int sum=0;
+    for(int i=1;i<n;i++){
+        if(n%i==0){
+            sum=sum+i;
+        }
+    }
+    if(sum==n){
+        printf("The given number is a perfect number");
+    }
+    else{
+        printf("The given number is not a perfect number");
+    }
+}
+int main()
+{
+    int val;
+    printf("Enter the number :");
+    scanf("%d",&val);
+    perfect(val);
+    return 0;
+}
